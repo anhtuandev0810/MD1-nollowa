@@ -1,10 +1,58 @@
 const categoryBox = document.querySelector(".tab-category");
 const productContainer = document.querySelector(".shop-container");
+const defaultProducts = [
+  {
+    categoryId: crypto.randomUUID(),
+    description: 'BAC',
+    id: crypto.randomUUID(),
+    image: '',
+    location: 'new-arrival',
+    name: 'Combo default 1',
+    price: '1222'
+  },
+  {
+    categoryId: crypto.randomUUID(),
+    description: 'BAC',
+    id: crypto.randomUUID(),
+    image: '',
+    location: 'new-arrival',
+    name: 'Combo default 1',
+    price: '1222'
+  },
+  {
+    categoryId: crypto.randomUUID(),
+    description: 'BAC',
+    id: crypto.randomUUID(),
+    image: '',
+    location: 'new-arrival',
+    name: 'Combo default 1',
+    price: '1222'
+  },
+  {
+    categoryId: crypto.randomUUID(),
+    description: 'BAC',
+    id: crypto.randomUUID(),
+    image: '',
+    location: 'new-arrival',
+    name: 'Combo default 1',
+    price: '1222'
+  },
+  {
+    categoryId: crypto.randomUUID(),
+    description: 'BAC',
+    id: crypto.randomUUID(),
+    image: '',
+    location: 'new-arrival',
+    name: 'Combo default 1',
+    price: '1222'
+  }
+
+];
 
 function showCategory() {
   let categories = localStorage.getItem("category-list")
     ? JSON.parse(localStorage.getItem("category-list"))
-    : [];
+    : defaultProducts;
 
   let render = "";
 
