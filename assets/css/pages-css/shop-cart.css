@@ -1,0 +1,17 @@
+.btn-update-cart {
+  background: transparent;
+}
+
+.checkout-box {
+  margin-top: 2rem;
+}
+
+.pay-error {
+  color: crimson;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.to-completed:hover {
+  color: #000;
+}

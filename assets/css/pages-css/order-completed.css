@@ -1,0 +1,11 @@
+#buy-continue-btn {
+  background: #379df6;
+}
+
+#buy-continue-btn::before {
+  background-color: #d451f9;
+}
+
+#buy-continue-btn::after {
+  background-color: #d451f9;
+}

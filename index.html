@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Web Icon -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/products/img/logo-img/2-removebg-preview.png"
+      type="image/png"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/pages-css/header.css" />
+    <link rel="stylesheet" href="assets/css/pages-css/index.css" />
+    <link rel="stylesheet" href="assets/css/pages-css/footer.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- ******************Header Start****************** -->
+    <div class="wrapper-header">
+      <header class="header">
+        <div class="topbar">
+          <p>Món ăn bạn yêu thích hiện đang mở order</p>
+          <button class="btn topbar-btn">Xem ngay</button>
+        </div>
+
+        <div class="stiky-nav">
+          <div class="stiky-nav-logo">
+            <a href="index.html"
+              ><img
+                src="assets/images/products/img/logo-img/logo-preview-1.png"
+            /></a>
+          </div>
+
+          <div class="stiky-search">
+            <input class="search-input" type="text" />
+            <button id="search-hide-btn" class="search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <!-- <div class="sticky-nav-icon">
+            <a href="login.html"><i class="far fa-user"></i></a>
+          </div> -->
+        </div>
+
+        <div class="container">
+          <div class="main-header-middle">
+            <div class="popup-nav-box">
+              <div class="toggle-nav">
+                <span class="toggle-open"><i class="fas fa-bars"></i></span>
+                <span class="toggle-close"><i class="fas fa-times"></i></span>
+              </div>
+
+              <div class="popup-nav">
+                <ul>
+                  <li><a href="#">trang chủ</a></li>
+                  <li><a href="#">giới thiệu</a></li>
+                  <li><a href="#">hướng dẫn</a><span>></span></li>
+                  <li><a href="#">sản phẩm</a><span>></span></li>
+                  <li><a href="#">review</a></li>
+                  <li><a href="#">ưu đãi</a></li>
+                  <li><a href="#">kết nối</a><span>></span></li>
+                  <li><a href="#">liên hệ</a><span>></span></li>
+                </ul>
+
+                <div class="nav-info">
+                  <p class="nav-info-title">bạn cần hỗ trợ?</p>
+                  <p>
+                    <span><i class="fa-solid fa-phone-volume"></i></span
+                    >090*******
+                  </p>
+                  <p>
+                    <span><i class="fa-regular fa-envelope"></i></span
+                    >support@example.vn
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <a href="index.html"
+              ><img
+                class="top-logo"
+                src="assets/images/products/img/logo-img/logo-top.jpg"
+                alt=""
+            /></a>
+
+            <div class="main-search-box">
+              <div class="search-item search-default">
+                <input class="search-input" type="text" />
+                <button class="btn search-btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+
+              <div class="render-search">
+                <ul class="render-search-box"></ul>
+              </div>
+            </div>
+
+            <div class="user-info">
+              <div class="login-box">
+                <div class="login-content login-show">
+                  <span
+                    ><a href="login.html"><i class="far fa-user"></i></a
+                  ></span>
+
+                  <div class="login-form-popup">
+                    <a href="login.html"
+                      ><p class="login-form-popup-top">
+                        Đăng nhập / Đăng ký
+                      </p></a
+                    >
+                  </div>
+                </div>
+
+                <div class="cart-box mini-cart">
+                  <span class="count-holder">
+                    <div class="count">0</div>
+                  </span>
+                  <p class="cart-hover mini-cart-icon">
+                    <a href="login.html"
+                      ><span><i class="fas fa-shopping-cart"></i></span
+                    ></a>
+                  </p>
+
+                  <div class="drop-down-cart">
+                    <p class="cart-name">GIỎ HÀNG</p>
+
+                    <ul class="cart-items-box">
+                      <li class="cart-item">
+                        <a href="shop-cart.html"
+                          ><img
+                            src="assets/images/products/img/main-img/main-content-img-15.png"
+                            alt=""
+                        /></a>
+
+                        <div class="cart-product-content">
+                          <div class="mini-cart-name">
+                            <a href="shop-cart.html"
+                              ><p>Lorem ipsum dolor sit amet consectetur.</p></a
+                            >
+                          </div>
+
+                          <div class="mini-cart-count">
+                            <span class="mini-cart-quantity">2</span>
+                            <span>X</span>
+                            <p>
+                              <span class="mini-cart-price">6.000.000</span>đ
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="delete-mini-cart">
+                          <span class="btn-delete-cart"
+                            ><i class="fas fa-times"></i
+                          ></span>
+                        </div>
+                      </li>
+
+                      <li class="cart-item">
+                        <a href="shop-cart.html"
+                          ><img
+                            src="assets/images/products/img/main-img/main-content-img-15.png"
+                            alt=""
+                        /></a>
+
+                        <div class="cart-product-content">
+                          <div class="mini-cart-name">
+                            <a href="shop-cart.html"
+                              ><p>Lorem ipsum dolor sit amet consectetur.</p></a
+                            >
+                          </div>
+
+                          <div class="mini-cart-count">
+                            <span class="mini-cart-quantity">2</span>
+                            <span>X</span>
+                            <p>
+                              <span class="mini-cart-price">6.000.000</span>đ
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="delete-mini-cart">
+                          <span class="btn-delete-cart"
+                            ><i class="fas fa-times"></i
+                          ></span>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <div class="drop-down-bottom">
+                      <div class="total-price">
+                        <p>TỔNG TIỀN :</p>
+                        <p class="mini-cart-total-price"><span>0</span>đ</p>
+                      </div>
+                      <div class="cart-btn-controll">
+                        <span class="shop-cart-btn">
+                          <a href="shop-cart.html">Xem giỏ hàng</a>
+                        </span>
+                        <span class="check-out-btn">
+                          <a href="checkout.html">Thanh toán</a>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="logout"><i class="fas fa-sign-out-alt"></i></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="search-item search-hide">
+            <input class="search-input" type="text" />
+            <button id="search-hide-btn" class="btn search-btn">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <nav class="header-navigation">
+            <ul class="nav-list">
+              <li class="list-item">
+                <a class="nav-link" href="index.html">Trang chủ</a>
+              </li>
+
+              <li class="nav-product list-item">
+                <a class="nav-link" href="category.html">Sản phẩm</a>
+              </li>
+              <li class="nav-connect list-item">
+                <a class="nav-link" href="#">
+                  Kết nối <span><i class="fas fa-chevron-down"></i></span
+                ></a>
+
+                <div class="nav-hide-item">
+                  <ul class="nav-hide-box">
+                    <li><a href="#">Japan Figure Trading</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Youtube</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-contact list-item">
+                <a class="nav-link" href="#">
+                  Liên hệ <span><i class="fas fa-chevron-down"></i></span
+                ></a>
+
+                <div class="nav-hide-item">
+                  <ul class="nav-hide-box">
+                    <li><a href="#">Địa chỉ</a></li>
+                    <li><a href="#">Số tài khoản</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <!-- ******************Header End****************** -->
+
+      <!-- ******************Banner Slider****************** -->
+      <div class="banner-container">
+        <div class="next-prev-btn">
+          <button class="prev"><</button>
+          <button class="next">></button>
+        </div>
+
+        <div class="slider-image-box">
+          <img
+            id="slide1"
+            class="slide-item"
+            src="assets/images/index-img/slide_7_img.jpg"
+            alt=""
+          />
+          <img
+            id="slide2"
+            class="slide-item"
+            src="assets/images/index-img/slide_8_img.jpg"
+            alt=""
+          />
+          <img
+            id="slide3"
+            class="slide-item"
+            src="assets/images/index-img/slide_9_img.jpg"
+            alt=""
+          />
+          <!-- <img
+            id="slide4"
+            class="slide-item"
+            src="assets/images/index-img/slide_4_img.png"
+            alt=""
+          /> -->
+
+          <img
+            id="slide4"
+            class="slide-item"
+            src="assets/images/index-img/slide_6_img.jpg"
+            alt=""
+          />
+        </div>
+
+        <ul>
+          <li class="slide-list active"></li>
+          <li class="slide-list"></li>
+          <li class="slide-list"></li>
+          <li class="slide-list"></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ******************Main Content****************** -->
+    <div class="wrapper-main">
+      <!-- ******************Main Top Start****************** -->
+      <section class="main-top">
+        <div class="container">
+          <div class="row">
+            <div class="main-top-row-content">
+              <div class="main-top-item groupbanner-hover">
+                <div class="main-top-item-content">
+                  <p>Bộ sưu tập</p>
+                  <h2>Nendoroid</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  </p>
+                  <button class="main-top-btn btn-hover">
+                    XEM NGAY <span>></span>
+                  </button>
+                </div>
+
+                <div class="item-image">
+                  <img
+                    class="banner-hover-img"
+                    src="assets/images/index-img/index-main-top-item-3.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="main-top-item groupbanner-hover">
+                <div class="main-top-item-content">
+                  <p>Bộ sưu tập</p>
+                  <h2>Nendoroid</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
+                  <button class="main-top-btn btn-hover">
+                    XEM NGAY <span>></span>
+                  </button>
+                </div>
+
+                <div class="item-image">
+                  <img
+                    class="banner-hover-img"
+                    src="assets/images/index-img/index-main-top-item-4.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ******************Main Top End****************** -->
+
+      <!-- ******************Main Middle Start****************** -->
+      <section class="main-middle main-section">
+        <div class="container">
+          <div class="main-middle-heading main-heading">
+            <ul class="tab-controll">
+              <li class="btn-hover tab-link" data-tab="new-arrival">
+                Sản phẩm mới
+              </li>
+              <li class="btn-hover tab-link" data-tab="best-sellers">
+                Sản phẩm bán chạy
+              </li>
+              <li class="btn-hover tab-link" data-tab="available">
+                Sản phẩm có sẵn
+              </li>
+              <li class="btn-hover tab-link" data-tab="order">Sản phẩm oder</li>
+            </ul>
+          </div>
+
+          <div class="row">
+            <div class="flex-collection shop-container">
+              <div class="main-item groupbanner-hover">
+                <img
+                  class="banner-hover-img"
+                  src="assets/images/index-img/main-content-img-1.png"
+                  alt=""
+                />
+              </div>
+
+              <div class="item-box">
+                <div class="collection-item">
+                  <img
+                    src="assets/images/index-img/main-content-img-2.png"
+                    alt=""
+                  />
+
+                  <div class="collection-item-content">
+                    <div class="item-description">
+                      <div class="description-content">
+                        <p>Lorem, ipsum dolor.</p>
+                        <p class="price">1,200,000<span>đ</span></p>
+                      </div>
+
+                      <div class="item-btns">
+                        <span class="buy btn-hover"
+                          ><i class="fa-solid fa-cart-shopping"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="collection-item">
+                  <img
+                    src="assets/images/index-img/main-content-img-3.png"
+                    alt=""
+                  />
+
+                  <div class="collection-item-content">
+                    <div class="item-description">
+                      <div class="description-content">
+                        <p>Lorem, ipsum dolor.</p>
+                        <p class="price">1,200,000<span>đ</span></p>
+                      </div>
+
+                      <div class="item-btns">
+                        <span class="buy btn-hover"
+                          ><i class="fa-solid fa-cart-shopping"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="collection-item">
+                  <img
+                    src="assets/images/index-img/main-content-img-4.png"
+                    alt=""
+                  />
+
+                  <div class="collection-item-content">
+                    <div class="item-description">
+                      <div class="description-content">
+                        <p>Lorem, ipsum dolor.</p>
+                        <p class="price">1,200,000<span>đ</span></p>
+                      </div>
+
+                      <div class="item-btns">
+                        <span class="buy btn-hover"
+                          ><i class="fa-solid fa-cart-shopping"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="collection-item">
+                  <img
+                    src="assets/images/index-img/main-content-img-5.png"
+                    alt=""
+                  />
+
+                  <div class="collection-item-content">
+                    <div class="item-description">
+                      <div class="description-content">
+                        <p>Lorem, ipsum dolor.</p>
+                        <p class="price">1,200,000<span>đ</span></p>
+                      </div>
+
+                      <div class="item-btns">
+                        <span class="buy btn-hover"
+                          ><i class="fa-solid fa-cart-shopping"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="collection-item">
+                  <img
+                    src="assets/images/index-img/main-content-img-6.png"
+                    alt=""
+                  />
+
+                  <div class="collection-item-content">
+                    <div class="item-description">
+                      <div class="description-content">
+                        <p>Lorem, ipsum dolor.</p>
+                        <p class="price">1,200,000<span>đ</span></p>
+                      </div>
+
+                      <div class="item-btns">
+                        <span class="buy btn-hover"
+                          ><i class="fa-solid fa-cart-shopping"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="collection-item">
+                  <img
+                    src="assets/images/index-img/main-content-img-7.png"
+                    alt=""
+                  />
+
+                  <div class="collection-item-content">
+                    <div class="item-description">
+                      <div class="description-content">
+                        <p>Lorem, ipsum dolor.</p>
+                        <p class="price">1,200,000<span>đ</span></p>
+                      </div>
+
+                      <div class="item-btns">
+                        <span class="buy btn-hover"
+                          ><i class="fa-solid fa-cart-shopping"></i
+                        ></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ******************Main Middle End****************** -->
+
+      <!-- ******************Main Bottom Banner****************** -->
+      <section class="main-section">
+        <div class="groupbanner-hover">
+          <img
+            src="assets/images/index-img/main-bottom-banner-1.jpg"
+            alt=""
+            class="main-bottom-banner banner-hover-img"
+          />
+        </div>
+      </section>
+      <!-- ******************Main Bottom Banner****************** -->
+
+      <!-- ******************Main Bottom Start****************** -->
+      <section class="main-section">
+        <div class="main-bottom">
+          <div class="container">
+            <div class="main-bottom-heading main-heading">
+              <span data-tab="scale-figure" class="main-middle-title"
+                >Sales Hot</span
+              >
+              <p class="main-middle-head head-content">
+                Món ngon giá hời
+              </p>
+            </div>
+
+            <button class="main-bottom-slide-nextbtn">></button>
+            <button class="main-bottom-slide-prevbtn"><</button>
+            <div class="main-bottom-flexbox">
+
+              <div class="main-bottom-item">
+                <img
+                  src="assets/images/index-img/main-bottom-img/New folder/combo1.jpg"
+                  alt=""
+                />
+
+                <div class="description-content">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="price">1,200,000<span>đ</span></p>
+                </div>
+              </div>
+
+              <div class="main-bottom-item">
+                <img
+                  src="assets/images/index-img/main-bottom-img/New folder/combo2.jpg"
+                  alt=""
+                />
+
+                <div class="description-content">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="price">1,200,000<span>đ</span></p>
+                </div>
+              </div>
+
+              <div class="main-bottom-item">
+                <img
+                  src="assets/images/index-img/main-bottom-img/New folder/combo3.jpg"
+                  alt=""
+                />
+
+                <div class="description-content">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="price">1,200,000<span>đ</span></p>
+                </div>
+              </div>
+
+              <div class="main-bottom-item">
+                <img
+                  src="assets/images/index-img/main-bottom-img/New folder/combo4.jpg"
+                  alt=""
+                />
+
+                <div class="description-content">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="price">1,200,000<span>đ</span></p>
+                </div>
+              </div>
+
+              <!-- <div class="main-bottom-item">
+                <img
+                  src="assets/images/index-img/main-bottom-img/main-bottom-img-9.png"
+                  alt=""
+                />
+
+                <div class="description-content">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="price">1,200,000<span>đ</span></p>
+                </div>
+              </div>
+
+              <div class="main-bottom-item">
+                <img
+                  src="assets/images/index-img/main-bottom-img/main-bottom-img-10.png"
+                  alt=""
+                />
+
+                <div class="description-content">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="price">1,200,000<span>đ</span></p>
+                </div>
+              </div>
+
+              <div class="main-bottom-item">
+                <img
+                  src="assets/images/index-img/main-bottom-img/main-bottom-img-11.png"
+                  alt=""
+                />
+
+                <div class="description-content">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="price">1,200,000<span>đ</span></p>
+                </div>
+              </div>
+
+              <div class="main-bottom-item">
+                <img
+                  src="assets/images/index-img/main-bottom-img/main-bottom-img-12.png"
+                  alt=""
+                />
+
+                <div class="description-content">
+                  <p>Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="price">1,200,000<span>đ</span></p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ******************Main Bottom End****************** -->
+
+      <!-- ******************Main Footer Top Start****************** -->
+      <section class="main-footer-top">
+        <div class="main-footer-top-box">
+          <div class="container">
+            <div class="main-footer-top-flex">
+              <div class="main-footer-top-item">
+                <div class="main-footer-top-img">
+                  <img
+                    src="assets/images/index-img/main-footer-top/main-footer-top-1.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="main-footer-top-content">
+                  <h4 class="main-footer-top-title">Sản phẩm chính hãng</h4>
+                  <p>Nhập khẩu trực tiếp từ Nhật Bản</p>
+                  <a href="#">Xem chi tiết<span>></span></a>
+                </div>
+              </div>
+
+              <div class="main-footer-top-item">
+                <div class="main-footer-top-img">
+                  <img
+                    src="assets/images/index-img/main-footer-top/main-footer-top-2.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="main-footer-top-content">
+                  <h4 class="main-footer-top-title">Thanh toán đơn giản</h4>
+                  <p>Chuyển khoản hoặc COD</p>
+                  <a href="#">Xem chi tiết<span>></span></a>
+                </div>
+              </div>
+
+              <div class="main-footer-top-item">
+                <div class="main-footer-top-img">
+                  <img
+                    src="assets/images/index-img/main-footer-top/main-footer-top-3.png"
+                    alt=""
+                  />
+                </div>
+
+                <div class="main-footer-top-content">
+                  <h4 class="main-footer-top-title">Giao hàng nhanh chóng</h4>
+                  <p>Miễn phí với đơn hàng > 1000K</p>
+                  <a href="#">Xem chi tiết<span>></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ******************Main Footer Top End****************** -->
+
+      <!-- ******************Main Footer Bottom Start****************** -->
+      <section class="main-section">
+        <div class="main-footer">
+          <div class="container">
+            <div class="main-footer-heading main-heading">
+              <span class="main-footer-title">News</span>
+              <p class="main-footer-head head-content">Các chương trình khuyến mãi hot trong tháng</p>
+            </div>
+
+            <div class="main-footer-flex">
+              <div class="main-footer-item">
+                <div class="main-footer-img">
+                  <img
+                    src="assets/images/index-img/main-bottom-img/New folder (2)/cover_ga_me_mat-01_1.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="mfi-content-box">
+                  <p class="mfi-content-title">Lorem ipsum dolor sit amet.</p>
+
+                  <p class="mfi-content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Facere incidunt reprehenderit vero omnis totam non facilis
+                    cum fugiat porro ratione.
+                  </p>
+                </div>
+
+                <div class="see-more-box">
+                  <button class="see-more-btn btn-hover">
+                    Xem Thêm<span>></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="main-footer-item">
+                <div class="main-footer-img">
+                  <img
+                    src="assets/images/index-img/main-bottom-img/New folder (2)/kem_tonado_210x140-01_1.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="mfi-content-box">
+                  <p class="mfi-content-title">Lorem ipsum dolor sit amet.</p>
+
+                  <p class="mfi-content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Facere incidunt reprehenderit vero omnis totam non facilis
+                    cum fugiat porro ratione.
+                  </p>
+                </div>
+
+                <div class="see-more-box">
+                  <button class="see-more-btn btn-hover">
+                    Xem Thêm<span>></span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="main-footer-item">
+                <div class="main-footer-img">
+                  <img
+                    src="assets/images/index-img/main-bottom-img/New folder (2)/nsp_thang_11-01.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="mfi-content-box">
+                  <p class="mfi-content-title">Lorem ipsum dolor sit amet.</p>
+
+                  <p class="mfi-content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Facere incidunt reprehenderit vero omnis totam non facilis
+                    cum fugiat porro ratione.
+                  </p>
+                </div>
+
+                <div class="see-more-box">
+                  <button class="see-more-btn btn-hover">
+                    <span>Xem Thêm</span><span>></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ******************Main Footer Bottom End****************** -->
+
+      <!-- ******************Footer Title Start****************** -->
+      <section class="footer-top">
+        <div class="container">
+          <div class="footer-title-content">
+            <span class="footer-title">Follow us on Instagram</span>
+            <p class="footer-title-email">nollowa@example.vn</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ******************Footer Title End****************** -->
+
+      <footer>
+        <!-- ******************Footer Banner Start****************** -->
+        <!-- <section class="footer-banner">
+          <div class="footer-banner-flex">
+            <div class="groupbanner-hover footer-img-box">
+              <img
+                src="assets/images/index-img/footer-banner/footer-banner-1.png"
+                class="banner-hover-img"
+              />
+            </div>
+
+            <div class="groupbanner-hover footer-img-box">
+              <img
+                src="assets/images/index-img/footer-banner/footer-banner-2.png"
+                class="banner-hover-img"
+              />
+            </div>
+
+            <div class="groupbanner-hover footer-img-box">
+              <img
+                src="assets/images/index-img/footer-banner/footer-banner-3.png"
+                class="banner-hover-img"
+              />
+            </div>
+
+            <div class="groupbanner-hover footer-img-box">
+              <img
+                src="assets/images/index-img/footer-banner/footer-banner-4.png"
+                class="banner-hover-img"
+              />
+            </div>
+
+            <div class="groupbanner-hover footer-img-box">
+              <img
+                src="assets/images/index-img/footer-banner/footer-banner-5.png"
+                class="banner-hover-img"
+              />
+            </div>
+
+            <div class="groupbanner-hover footer-img-box">
+              <img
+                src="assets/images/index-img/footer-banner/footer-banner-6.png"
+                class="banner-hover-img"
+              />
+            </div>
+          </div>
+        </section> -->
+
+        <!-- ******************Footer Banner End****************** -->
+
+        <!-- ******************Footer Middle Start****************** -->
+        <section class="footer-middle">
+          <div class="footer-middle-box">
+            <div class="container">
+              <div class="footer-middle-flex">
+                <div class="footer-item">
+                  <div class="footer-item-title">
+                    <img
+                      src="assets/images/products/img/logo-img/logo-preview-1.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="footer-item-content">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Alias, iure!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="footer-item">
+                  <div class="footer-item-title">
+                    <h4></h4>
+                  </div>
+
+                  <div class="footer-item-content">
+                    <p class="footer-item-title">
+                      Địa chỉ:
+                      <p>Chi nhánh 1: Quận X, Tp.XXX</p> 
+                      <p>Chi nhánh 2: Quận X, Tp.XXX </p>
+                      <p>Chi nhánh 3: Quận X, Tp.XXX</p> 
+                    </p>
+                    <p><span>Điện thoại:</span> 090 **** ***</p>
+                    <p><span>Email:</span> example@gmail.vn</p>
+                  </div>
+                </div>
+
+                <div class="footer-item">
+                  <div class="footer-item-title">
+                    <h4>Hỗ trợ khách hàng</h4>
+                  </div>
+
+                  <div class="footer-item-content">
+                    <ul>
+                      <li><a href="#">Tìm kiếm</a></li>
+                      <li><a href="#">Giới thiệu</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="footer-item">
+                  <div class="footer-item-title">
+                    <h4>Chăm sóc khách hàng</h4>
+                  </div>
+
+                  <div class="content-flex">
+                    <div class="phone-icon">
+                      <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+
+                    <div class="info">
+                      <p>090*******</p>
+                      <p>support@example.vn</p>
+                    </div>
+                  </div>
+
+                  <h4 class="social-title">Follow</h4>
+                  <ul class="social-list">
+                    <li>
+                      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="footer-bottom">
+          <div class="footer-bottom-box">
+            <div class="container">
+              <div class="footer-bottom-flex">
+                <p class="footer-bottom-content">
+                  Copyright <span>&#169;</span> 2023 Japan Figure. Powered by
+                  Haravan
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ******************Footer Banner End****************** -->
+      </footer>
+    </div>
+
+    <!-- JS -->
+    <script src="assets/js/pages/main-header.js"></script>
+    <script src="assets/js/pages/all.js"></script>
+    <script src="assets/js/pages/index.js"></script>
+    <script src="assets/js/pages/home.js"></script>
+    <script src="assets/js/pages/drop-down-cart.js"></script>
+  </body>
+</html>
