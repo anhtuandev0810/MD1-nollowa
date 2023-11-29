@@ -2,57 +2,129 @@ const categoryBox = document.querySelector(".tab-category");
 const productContainer = document.querySelector(".shop-container");
 const defaultProducts = [
   {
-    categoryId: crypto.randomUUID(),
+    categoryId: 1,
     description: 'BAC',
-    id: crypto.randomUUID(),
-    image: '',
+    id: 0,
+    image: 'https://cdn.lotteria.vn/media/catalog/product/m/e/menu_menu_copy_2.jpg',
     location: 'new-arrival',
-    name: '',
+    name: 'Combo Loty',
+    price: '12'
+  },
+  {
+    categoryId: 1,
+    description: 'BAC',
+    id: 1,
+    image: 'https://cdn.lotteria.vn/media/catalog/product/2/2/228350-online_5.png',
+    location: 'new-arrival',
+    name: 'Combo Double Cheese',
+    price: '15'
+  },
+  {
+    categoryId: 1,
+    description: 'BAC',
+    id: 2,
+    image: 'https://cdn.lotteria.vn/media/catalog/product/2/2/228786-online_5.png',
+    location: 'new-arrival',
+    name: 'Gà sốt HS phần',
+    price: '22'
+  },
+  {
+    categoryId: 1,
+    description: 'BAC',
+    id: 3,
+    image: 'https://cdn.lotteria.vn/media/catalog/product/2/2/228325-online_5.png',
+    location: 'new-arrival',
+    name: 'Lody Set',
+    price: '23'
+  },
+  {
+    categoryId: 1,
+    description: 'BAC',
+    id: 4,
+    image: 'https://cdn.lotteria.vn/media/catalog/product/2/2/228703-online_5.png',
+    location: 'new-arrival',
+    name: 'Loking Set',
+    price: '24'
+  },
+  {
+    categoryId: 1,
+    description: 'BAC',
+    id: 5,
+    image: 'https://cdn.lotteria.vn/media/catalog/product/2/0/200009-online_5.png',
+    location: 'new-arrival',
+    name: 'Combo Burger Bulgogi',
+    price: '19'
+  },
+  {
+    categoryId: 1,
+    description: 'BAC',
+    id: 6,
+    image: 'https://cdn.lotteria.vn/media/catalog/product/2/2/228785-online_5.png',
+    location: 'new-arrival',
+    name: 'Gà rán phần',
     price: '1222'
   },
   {
-    categoryId: crypto.randomUUID(),
+    categoryId: 1,
     description: 'BAC',
-    id: crypto.randomUUID(),
-    image: '',
+    id: 7,
+    image: 'https://cdn.lotteria.vn/media/catalog/product/2/2/228329-online_5.png',
     location: 'new-arrival',
-    name: '',
-    price: '1222'
+    name: 'L4 Set',
+    price: '32'
   },
   {
-    categoryId: crypto.randomUUID(),
+    categoryId: 1,
     description: 'BAC',
-    id: crypto.randomUUID(),
-    image: '',
+    id: 8,
+    image: 'https://cdn.lotteria.vn/media/catalog/product/2/2/222288_4.png',
     location: 'new-arrival',
-    name: '',
-    price: '1222'
+    name: 'Gà sốt đậu (6 miếng)',
+    price: '34'
   },
   {
-    categoryId: crypto.randomUUID(),
+    categoryId: 1,
     description: 'BAC',
-    id: crypto.randomUUID(),
-    image: '',
+    id: 9,
+    image: 'https://cdn.lotteria.vn/media/catalog/product/2/1/218680_4.png',
     location: 'new-arrival',
-    name: '',
-    price: '1222'
+    name: 'Gà sốt phô mai (6 miếng)',
+    price: '26'
   },
   {
-    categoryId: crypto.randomUUID(),
+    categoryId: 1,
     description: 'BAC',
-    id: crypto.randomUUID(),
-    image: '',
+    id: 10,
+    image: 'https://cdn.lotteria.vn/media/catalog/product/2/2/228612_4.png',
     location: 'new-arrival',
-    name: '',
-    price: '1222'
-  }
-
+    name: 'Gà sốt Buffalo (6 miếng)',
+    price: '22'
+  },
+  {
+    categoryId: 1,
+    description: 'BAC',
+    id: 11,
+    image: 'https://cdn.lotteria.vn/media/catalog/product/2/2/228380.png',
+    location: 'new-arrival',
+    name: 'Gà nướng (6 miếng)',
+    price: '24'
+  },
 ];
+
+
+
+const defaultCategory = [
+  {
+    categoryId: 1,
+    name: "Default Products"
+  }
+];
+
 
 function showCategory() {
   let categories = localStorage.getItem("category-list")
     ? JSON.parse(localStorage.getItem("category-list"))
-    : defaultProducts;
+    : defaultCategory;
 
   let render = "";
   
@@ -76,7 +148,7 @@ let pageItems;
 function getPageTotalItem(target) {
   let productList = localStorage.getItem("product-list")
     ? JSON.parse(localStorage.getItem("product-list"))
-    : [];
+    : defaultProducts;
 
   let categoryId = target.getAttribute("category-id");
 
@@ -84,15 +156,13 @@ function getPageTotalItem(target) {
     (item) => item.categoryId === categoryId
   );
 
-  pageItems = categoryListById;
-
+  pageItems = categoryListById.length ? categoryListById : defaultProducts;
   renderPageNMumber();
-
-  if (categoryListById.length > 0) {
+  if (pageItems.length > 0) {
     activePage = 1;
     document.querySelector(".page-link").click();
   } else {
-    productContainer.innerHTML = `<h1 class="empty-item">Sản phẩm đang được cập nhật, xin lỗi vì sự bất tiện này!</h1>`;
+    // productContainer.innerHTML = `<h1 class="empty-item">Sản phẩm đang được cập nhật, xin lỗi vì sự bất tiện này!</h1>`;
   }
 }
 
@@ -211,7 +281,9 @@ function categoryAddToCart(target) {
 
 function controllCategoryTab(e) {
   e.preventDefault();
-
+  localStorage.setItem('default-products', JSON.stringify(defaultProducts));
+localStorage.setItem("default-category", JSON.stringify(defaultCategory));
+  
   let target = e.target;
 
   if (target.classList.contains("categories_name")) {

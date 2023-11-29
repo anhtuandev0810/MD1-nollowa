@@ -36,3 +36,9 @@ function handleSlidePrevItem() {
 
 bottomSlidePrevBtn.addEventListener("click", handleSlidePrevItem);
 bottomSlideNextBtn.addEventListener("click", handleSlideNextItem);
+
+
+
+document.getElementById("fb").scrollIntoView();
+document.getElementById("ig").scrollIntoView();
+document.getElementById("yt").scrollIntoView();
