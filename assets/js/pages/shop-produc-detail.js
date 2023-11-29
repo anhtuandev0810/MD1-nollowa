@@ -5,24 +5,38 @@ const productDetailCategory = document.querySelector(".product-meta");
 const productDetailDes = document.querySelector("#Description");
 const cartExtra = document.querySelector(".cart_extra");
 
+const defaultProducts = JSON.parse(localStorage.getItem("default-products"));
+console.log(defaultProducts);
+const defaultCategory = JSON.parse(localStorage.getItem("default-category"));
+console.log(defaultCategory);
+// const defaultCategory = [
+//   {
+//     categoryId: crypto.randomUUID(),
+//     name: "Default Products"
+//   }
+// ];
+
+
 function getProductId() {
   let arrParam = document.location.search.split("=");
 
   return arrParam[1];
 }
+console.log(getProductId());
 
 function renderProductDetail() {
   let productList = localStorage.getItem("product-list")
     ? JSON.parse(localStorage.getItem("product-list"))
-    : [];
+    : defaultProducts;
 
   let categories = localStorage.getItem("category-list")
     ? JSON.parse(localStorage.getItem("category-list"))
-    : [];
-
-  let product = productList.find((item) => item.id === getProductId());
-  let productCategory = categories.find(
-    (item) => product.categoryId === item.id
+    : defaultCategory;
+  
+  let product = productList.find((item) => item.id.toString() === getProductId());
+  console.log(product);
+  let productCategory = categories?.find(
+    (item) => product.categoryId === item.categoryId
   );
 
   productDetailImg.src = product.image;
