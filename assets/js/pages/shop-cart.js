@@ -33,7 +33,7 @@ function renderShopCart() {
                 </td>
                 <td class="product-price" data-title="Price"><span class="card-item-price">${
                   item.price
-                }</span> vnđ</td>
+                }</span> $</td>
                 <td class="product-quantity" data-title="Quantity">
                 <div class="quantity">
                     <input type="button" value="-" class="minus" />
@@ -51,7 +51,7 @@ function renderShopCart() {
                 <td class="product-subtotal" data-title="Total">
                   <span class="card-total-price">${
                     +item.quantity * +item.price
-                  }</span> vnđ
+                  }</span> $
                 </td>
                 <td class="product-remove" data-title="Remove">
                 <a href="#"><i data-id=${

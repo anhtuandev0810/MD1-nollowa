@@ -7,7 +7,7 @@ const defaultProducts = [
     id: crypto.randomUUID(),
     image: '',
     location: 'new-arrival',
-    name: 'Combo default 1',
+    name: '',
     price: '1222'
   },
   {
@@ -16,7 +16,7 @@ const defaultProducts = [
     id: crypto.randomUUID(),
     image: '',
     location: 'new-arrival',
-    name: 'Combo default 1',
+    name: '',
     price: '1222'
   },
   {
@@ -25,7 +25,7 @@ const defaultProducts = [
     id: crypto.randomUUID(),
     image: '',
     location: 'new-arrival',
-    name: 'Combo default 1',
+    name: '',
     price: '1222'
   },
   {
@@ -34,7 +34,7 @@ const defaultProducts = [
     id: crypto.randomUUID(),
     image: '',
     location: 'new-arrival',
-    name: 'Combo default 1',
+    name: '',
     price: '1222'
   },
   {
@@ -43,7 +43,7 @@ const defaultProducts = [
     id: crypto.randomUUID(),
     image: '',
     location: 'new-arrival',
-    name: 'Combo default 1',
+    name: '',
     price: '1222'
   }
 
@@ -55,7 +55,7 @@ function showCategory() {
     : defaultProducts;
 
   let render = "";
-
+  
   categories.forEach((item) => {
     render += `<li class="tab-link categories_name" category-id="${item.id}">
                     ${item.name}
@@ -92,7 +92,7 @@ function getPageTotalItem(target) {
     activePage = 1;
     document.querySelector(".page-link").click();
   } else {
-    productContainer.innerHTML = `<h1 class="empty-item">Comming Soon...</h1>`;
+    productContainer.innerHTML = `<h1 class="empty-item">Sản phẩm đang được cập nhật, xin lỗi vì sự bất tiện này!</h1>`;
   }
 }
 

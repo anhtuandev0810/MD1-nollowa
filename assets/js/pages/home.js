@@ -56,17 +56,20 @@ function handleRender(products) {
 
   let imageSrc = "";
   let render = "";
+  let nameProduct = "";
 
   if (productShow[0] && productShow[0].image) {
     imageSrc = productShow[0].image;
+    nameProduct = productShow[0].name;
   }
 
   if (productShow.length > 0) {
     render = `<div class="main-item groupbanner-hover">
-        <a href='/shop-product-detail.html?id=${productShow[0].id}'>
+        <a class="product-item-show" href='/shop-product-detail.html?id=${productShow[0].id}'>
           <img class="banner-hover-img"
           src="${imageSrc}"
           alt="" />
+          <p>${nameProduct}</p>
         </a>
       </div>
   
@@ -152,17 +155,22 @@ function rederMainBottom() {
   let producRender = productTabList.slice(0, scaleFigureMaxItem);
 
   let render = "";
-
-  producRender.forEach((item) => {
-    render += `<div class="main-bottom-item">
-        <img data-id="${item.id}" src="${item.image}" alt="">
-
-        <div class="description-content">
-          <p>${item.name}</p>
-          <p class="price"><span>${item.price}</span>$</p>
-        </div>
-      </div>`;
-  });
+  console.log(producRender);
+  if(producRender.length > 0) {
+    producRender.forEach((item) => {
+      render = `<div class="main-bottom-item">
+          <img data-id="${item.id}" src="${item.image}" alt="">
+  
+          <div class="description-content">
+            <p>${item.name}</p>
+            <p class="price"><span>${item.price}</span>$</p>
+          </div>
+        </div>`;
+    });
+  } else {
+    render = `<p class="empty-item"> Đăng nhập để xem thêm...</p>`;
+  }
+  
 
   scaleFigureBox.innerHTML = render;
 
@@ -188,5 +196,5 @@ function productBtnControll(e) {
   }
 }
 
-productBox.addEventListener("click", productBtnControll);
+productBox?.addEventListener("click", productBtnControll);
 rederMainBottom();

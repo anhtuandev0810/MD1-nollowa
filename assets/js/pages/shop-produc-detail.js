@@ -27,7 +27,7 @@ function renderProductDetail() {
 
   productDetailImg.src = product.image;
   productDetailName.innerHTML = `<a href="#">${product.name}</a>`;
-  productDetailPrice.innerText = `${product.price} vnđ`;
+  productDetailPrice.innerText = `${product.price}$`;
   productDetailCategory.innerHTML = `<li>Category: <a href="#">${productCategory.name}</a></li>`;
   productDetailDes.innerHTML = `<p>${product.description}</p>`;
 }
