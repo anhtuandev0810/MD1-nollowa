@@ -80,7 +80,7 @@ function plusitems(target) {
     let parentElement = target.closest("tr");
 
     let itemId = parentElement.getAttribute("data-id");
-    let item = cartUserItem.find((item) => itemId === item.id);
+    let item = cartUserItem.find((item) => itemId === item.id.toString());
 
     let itemQuantity = parentElement.querySelector('input[name="quantity"]');
 
