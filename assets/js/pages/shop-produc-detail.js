@@ -35,9 +35,11 @@ function renderProductDetail() {
   
   let product = productList.find((item) => item.id.toString() === getProductId());
   console.log(product);
+  console.log(categories);
   let productCategory = categories?.find(
-    (item) => product.categoryId === item.categoryId
+    (item) => product.categoryId === item.id
   );
+  console.log(productCategory);
 
   productDetailImg.src = product.image;
   productDetailName.innerHTML = `<a href="#">${product.name}</a>`;
@@ -71,15 +73,16 @@ function updateCart(target) {
 
   let productList = localStorage.getItem("product-list")
     ? JSON.parse(localStorage.getItem("product-list"))
-    : [];
+    : defaultProducts;
 
   let parentElement = target.closest(".cart_extra");
 
   let quantityInput = parentElement.querySelector('input[name="quantity"]');
 
   if (getUserInfo()) {
-    let index = productList.findIndex((item) => item.id === getProductId());
+    let index = productList.findIndex((item) => item.id.toString() === getProductId());
     let activeUserId = getUserInfo().id;
+    console.log(productList[index]);
 
     cartItems[activeUserId] = cartItems[activeUserId]
       ? cartItems[activeUserId]

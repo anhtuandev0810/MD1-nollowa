@@ -115,7 +115,7 @@ const defaultProducts = [
 
 const defaultCategory = [
   {
-    categoryId: 1,
+    id: 1,
     name: "Default Products"
   }
 ];
@@ -241,15 +241,17 @@ function renderItemByPage(e) {
 function categoryAddToCart(target) {
   let productList = localStorage.getItem("product-list")
     ? JSON.parse(localStorage.getItem("product-list"))
-    : [];
+    : defaultProducts;
 
   let cartItems = localStorage.getItem("cart-items")
     ? JSON.parse(localStorage.getItem("cart-items"))
-    : {};
+    : defaultCategory[0];
 
   if (getUserInfo()) {
     let addCardId = target.getAttribute("data-id");
-    let index = productList.findIndex((item) => item.id === addCardId);
+    console.log(typeof addCardId);
+    let index = productList.findIndex((item) => item.id.toString() === addCardId);
+    console.log(index);
     let activeUserId = getUserInfo().id;
 
     cartItems[activeUserId] = cartItems[activeUserId]
